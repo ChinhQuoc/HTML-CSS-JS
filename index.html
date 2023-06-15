@@ -4,7 +4,139 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>UK Hospital</title>
   </head>
-  <body></body>
+  <body>
+    <!--HEADER-->
+    <header class="contact">
+      <p>Contact Us +91 9636 20000 / 01 | ukh@hospital.com</p>
+    </header>
+
+    <!--NAVBAR-->
+    <section class="vavbar">
+      <h1><span>UK</span> Hospital</h1>
+
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Doctors</a></li>
+        <li><a href="#">Contact US</a></li>
+      </ul>
+    </section>
+
+    <!--CONTENT-->
+    <section class="content">
+      <!--IMAGE-->
+      <div class="image">
+        <div class="image__title">
+          <h3>helth care services<br />we care about you health</h3>
+        </div>
+      </div>
+      <div class="main">
+        <!--INFORMATION-->
+        <section class="information">
+          <p>We are medical center</p>
+          <h4>We Have Medicare Plan Options for You!</h4>
+          <p>
+            Phasellus pretium orci sit amet mi ullamcorper cgestas. Sed non
+            mattis metus. Integer vel lorem tincidunt, pharetra eros nec,
+            posuere odio. Nullam eget bibendum sem, venenatis lacinia justo.
+            Duis aliquet lobortis neque, eget volutpat nulla iaculis a.
+          </p>
+
+          <p>
+            In hac habitasse platea dictumst. Praesent condimentum justo justo,
+            at ultricies diam accumsan vitae. Donec ac elementum diam. Ut quam
+            orci, posuere quis lacus 5 sed, vehicula rhoncus massa. Nunc
+            volutpat nibh nulla, tincidunt egestas tellus faucibus nec.
+          </p>
+
+          <ul>
+            <li>Nulla venenatis auctor quam, ac porta lectus dictum in</li>
+            <li>Aliquam sodales nhỉ stamet lorem</li>
+            <li>Suspendisse vulputate tellus in justo convallis imperdiet</li>
+            <li>Morbi id lorem consequat, sodales mi non</li>
+            <li>Nulla venenatis auctor quam, ac porta lectus dictum in</li>
+          </ul>
+        </section>
+        <hr />
+
+        <!--FORM-->
+        <section class="form-data">
+          <h2>Make an Appointment</h2>
+          <div class="form-request">
+            <div></div>
+            <form class="form-grid">
+              <div class="row">
+                <input
+                  type="text"
+                  id="firstName"
+                  name="firstName"
+                  placeholder="First Name"
+                  class="col"
+                />
+                <input
+                  type="text"
+                  id="lastName"
+                  name="lastName"
+                  placeholder="Last Name"
+                  class="col"
+                />
+              </div>
+
+              <div class="row">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Email Id"
+                  class="col"
+                />
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="Mobile No"
+                  pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                  class="col"
+                />
+              </div>
+
+              <div class="row">
+                <select name="sexs" id="sexs" class="col">
+                  <option value="" disabled selected>-- Sex --</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                  <option value="other">Other</option>
+                </select>
+                <input
+                  type="text"
+                  id="date"
+                  name="date"
+                  placeholder="Appointment date"
+                  onfocus="(this.type = 'date')"
+                  class="col"
+                />
+              </div>
+
+              <div class="row">
+                <textarea
+                  class="col2"
+                  name="describe"
+                  id="describe"
+                  cols="30"
+                  rows="5"
+                ></textarea>
+              </div>
+
+              <div class="row">
+                <input class="col2" type="submit" value="SUBMIT" />
+              </div>
+            </form>
+          </div>
+        </section>
+      </div>
+    </section>
+  </body>
 </html>

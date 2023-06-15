@@ -6,3 +6,139 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
+
+:root {
+  --main-color: rgb(83, 164, 229);
+}
+
+/* COMMON */
+a {
+  text-decoration: none;
+  color: gray;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+input,
+select,
+textarea {
+  border: 1px solid gray;
+  margin: 10px;
+  padding: 5px;
+}
+
+/* HEADER */
+.contact {
+  background-color: var(--main-color);
+  color: white;
+  text-align: right;
+  padding: 8px 0;
+}
+
+.contact p {
+  font-size: 12px;
+}
+
+/* NAVBAR */
+.vavbar {
+  margin: 20px 0 20px 100px;
+}
+.navbar .h1 {
+  font-weight: 500;
+}
+
+.vavbar h1 span {
+  color: var(--main-color);
+}
+
+.vavbar ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.vavbar ul > li:not(:first-child) {
+  margin: 0 0 0 20px;
+}
+
+/* IMAGE */
+.image {
+  background-image: url("./image/main-image.jpg");
+  background-repeat: no-repeat;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+}
+
+.image .image__title {
+  margin: 0 10%;
+  background-color: #181414;
+  opacity: 0.2;
+  padding: calc(500px * 0.3) 0;
+}
+
+.image .image__title h3 {
+  text-transform: capitalize;
+  font-size: 30px;
+  font-weight: 100;
+  color: white;
+}
+
+/* INFORMATION */
+.information {
+  padding: 0 50px;
+}
+
+.main .information p {
+  margin: 20px 0;
+}
+
+.main .information ul {
+  padding: 0 0 20px 45px;
+}
+
+hr {
+  border: 1px solid gray;
+}
+
+/* FORM */
+.form-data {
+  padding: 20px 50px;
+  text-align: center;
+}
+
+.form-data h2 {
+  margin-bottom: 10px;
+}
+
+.form-request {
+  display: flex;
+  justify-content: space-around;
+}
+
+.row {
+  padding: 5px 0;
+}
+
+.row .col {
+  width: 200px;
+}
+
+.row .col2 {
+  width: 420px;
+}
+
+input[type="date"] {
+  width: 200px;
+}
+
+input[type="submit"] {
+  background-color: var(--main-color);
+  color: white;
+}
